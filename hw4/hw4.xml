@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/css" href = "hw4.css" ?>
+
+<states
+	xmlns:we = "http://www.ccsf.edu/west"
+	xmlns:ea = "http://www.ccsf.edu/east"
+	>
+
+	<we:name>California</we:name>
+	<ea:name>Delaware</ea:name>
+	<ea:name>New York</ea:name>
+	<ea:name>North Carolina</ea:name>
+	<we:name>Oregon</we:name>
+	<ea:name>Florida</ea:name>
+	<we:name>Utah</we:name>
+	<we:name>Washington</we:name>
+
+</states>
