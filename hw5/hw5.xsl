@@ -15,10 +15,10 @@
 					</tr>
 					<xsl:for-each select = "stock:item">
 						<xsl:if test = "stock:price &gt; 70.00" >
-							<tr style = "background-color:cyan">
-								<td><xsl:value-of select = "stock:symbol" /></td>
-								<td><xsl:value-of select = "stock:price" /></td>
-								<td><xsl:value-of select = "stock:ceo" /></td>
+							<tr>
+								<td style = "background-color:cyan"><xsl:value-of select = "stock:symbol" /></td>
+								<td style = "background-color:light gray"><xsl:value-of select = "stock:price" /></td>
+								<td style = "background-color:cyan"><xsl:value-of select = "stock:ceo" /></td>
 							</tr>
 						</xsl:if>
 					</xsl:for-each>
