@@ -1,28 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version = "1.0" encoding = "UTF-8" ?>
 
-<xsl:stylesheet version = "1.0" 
-xmlns:xsl = "http://www.w3.org/1999/XSL/Transform" 
-xmlns:stock = "http://www.ineasysteps.com/xsd" >
+	<xsl:stylesheet version = "1.0"
+		xmlns:xsl = "http://www.w3.org/1999/XSL/Transform"
+		xmlns:stock = "http://www.ineasysteps.com/xsd">
 
-<xsl:template match="/">
-<html>
-<body>
-	<table>
-		<tr>
-			<th style="background-color:#black; color:white">Symbol</th>
-			<th style="background-color:#black; color:white">Price</th>
-			<th style="background-color:#black; color:white">CEO</th>
-		</tr>
-		<xsl:for-each select="stock:item">
-			<tr>
-				<td><xsl:value-of select="stock:item/stock:symbol"/></td>
-				<td><xsl:value-of select="stock:item/stock:price"/></td>
-				<td><xsl:value-of select="stock:item/stock:ceo"/></td>
+	<xsl:output method = "html" encoding = "UTF-8" />
 
-			</tr>
-		</xsl:for-each>
-	</table>
-</body>
-</html>
-</xsl:template>
+	<xsl:template match = "stock:doc" >
+		<html>
+			<body>
+				<table>
+					<tr style = "color:white; background-color:black">
+						<th>Symbol</th><th>Price</th><th>CEO</th>
+					</tr>
+					<xsl:for-each select = "stock:item">
+						<xsl:if test = "stock:price &gt; 70.00" >
+							<tr style = "background-color:cyan">
+								<td><xsl:value-of select = "stock:symbol" /></td>
+								<td><xsl:value-of select = "stock:price" /></td>
+								<td><xsl:value-of select = "stock:ceo" /></td>
+							</tr>
+						</xsl:if>
+					</xsl:for-each>
+				</table>
+			</body>
+		</html>
+	</xsl:template>
+
 </xsl:stylesheet>
