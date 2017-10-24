@@ -1,0 +1,8 @@
+@namespace we "http://www.ccsf.edu/west";
+@namespace ea "http://www.ccsf.edu/east";
+
+states { width: 300px; border: 2px solid red; margin: 0 auto; }
+
+we|name { display: block; width: 100%; background-color: yellow; color: blue; font-weight: bold; }
+
+ea|name { display: block; width: 100%; background-color: skyblue; color: red; font-weight: bold; }

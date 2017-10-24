@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/css" href = "hw2.css" ?>
+<!-- Reed Nilsson 9/11/2017 -->
+
+<ccsf>
+
+	<cnit131 id="cnit32111">Internet &amp; Intro to HTML
+		<instructor>Prof. 131</instructor>
+	</cnit131>
+	<cnit131a id="cnit32123">XML &amp; JSON
+		<instructor>Prof 131a</instructor>
+	</cnit131a>
+	<cnit132 id="cnit32145">Intermediate HTML &amp; CSS
+		<instructor>Prof 132</instructor>
+	</cnit132>
+	<cnit133 id="cnit32167">Javascript
+		<instructor>Prof 133</instructor>
+	</cnit133>
+
+</ccsf>
