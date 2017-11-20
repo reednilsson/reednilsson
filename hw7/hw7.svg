@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<svg version="1.1" baseProfile="full"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="475px" height="275px" >
+
+<g font-size="16pt" font-family="Courier" transform="translate(0,25), skewY(-5)">
+	<rect x="75" y="25" width="300px" height="50" fill="yellow" />
+	<text x="85" y="55" fill="blue">SVG Files in CNIT 131A</text>
+
+	</g>
+
+<polygon fill="yellow" stroke="blue" stroke-width="2px" points="50,200 100,100 150,200" />
+
+<circle fill="blue" stroke="red" stroke-width="4px" cx="225" cy="150" r="50px" />
+
+<defs>
+	<linearGradient id="PG">
+		<stop offset = "0%" stop-color = "blue" />
+		<stop offset = "100" stop-color = "yellow" />
+	</linearGradient>
+</defs>
+
+<defs>
+	<linearGradient id="SG">
+		<stop offset = "0%" stop-color = "yellow" />
+		<stop offset = "100" stop-color = "red" />
+	</linearGradient>
+</defs>
+
+<polygon fill="url(#PG)" stroke="url(#SG)" stroke-width="10px" points="300,100 325,200 375,200 400,100" />
+
+</svg>
